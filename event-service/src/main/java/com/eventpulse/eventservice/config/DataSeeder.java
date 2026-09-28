@@ -30,6 +30,6 @@ public class DataSeeder implements CommandLineRunner {
 
         eventRepository.save(new Event("Photography Walk",
                 "Sunset photo", "Grand Soc",
-                LocalDateTime.now().plusDays(20), 2));   // only 2 seats, to test "sold out"
+                LocalDateTime.now().plusDays(20), 2)); 
     }
 }
