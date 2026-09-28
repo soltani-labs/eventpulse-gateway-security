@@ -1,4 +1,15 @@
-# jwt partagé par tout les services
+# partagé par tout les services
 jwt:
   secret: ZXZlbnRwdWxzZS1zdXBlci1zZWNyZXQta2V5LWZvci1qd3QtMjU2LWJpdHMtbG9uZw==
   expiration: 3600000   # 1 heure en ms
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
