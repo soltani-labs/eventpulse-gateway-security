@@ -50,7 +50,7 @@ public class AuthService {
     }
 
     public AuthResponse login(LoginRequest request) {
-    
+
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.username(), request.password())
         );
