@@ -65,7 +65,7 @@ public class JwtAuthenticationFilter implements WebFilter {
                     .contextWrite(ReactiveSecurityContextHolder.withAuthentication(auth));
 
         } catch (Exception e) {
-            
+
             return chain.filter(cleaned);
         }
     }
